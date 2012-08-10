@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'RedditKitTest' target in the 'RedditKitTest' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <RedditKit/RedditKit.h>
+    #import "Reddit.h"
+#endif

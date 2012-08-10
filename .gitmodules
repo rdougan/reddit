@@ -1,0 +1,3 @@
+[submodule "Vendor/RedditKit"]
+    path = Vendor/RedditKit
+    url = git://github.com/rdougan/RedditKit.git
