@@ -9,9 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 @class RDWindowController;
+@class RDLoginWindowController;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     RDWindowController *windowController;
+    RDLoginWindowController *loginwindowController;
 }
 
 @end

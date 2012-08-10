@@ -10,7 +10,6 @@
 		E1096C5915CF835800D2E5D0 /* ImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1096C5815CF835800D2E5D0 /* ImageView.xib */; };
 		E10A00F115CCA50F003F8ED7 /* RedditKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10A00F015CCA50F003F8ED7 /* RedditKit.framework */; };
 		E136C1CD15CFAAF5008F9954 /* RDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E136C1CC15CFAAF5008F9954 /* RDImageView.m */; };
-		E1512D5E15CF79E300E5C885 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1512D5D15CF79E300E5C885 /* QuartzCore.framework */; };
 		E156A59F15D1BAF200728A28 /* RDContentContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E156A59E15D1BAF200728A28 /* RDContentContainer.m */; };
 		E156A5A215D1BC1900728A28 /* RDContentToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E156A5A115D1BC1900728A28 /* RDContentToolbar.m */; };
 		E156A5A515D1BCE600728A28 /* content_toolbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E156A5A415D1BCE600728A28 /* content_toolbar_bg.png */; };
@@ -21,7 +20,6 @@
 		E156A5BD15D1CB8D00728A28 /* close_button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = E156A5BA15D1CB8D00728A28 /* close_button_on.png */; };
 		E156A5BE15D1CB8D00728A28 /* maximize_button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = E156A5BB15D1CB8D00728A28 /* maximize_button_on.png */; };
 		E156A5BF15D1CB8D00728A28 /* minimize_button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = E156A5BC15D1CB8D00728A28 /* minimize_button_on.png */; };
-		E156A5CC15D1D57F00728A28 /* Reddit.m in Sources */ = {isa = PBXBuildFile; fileRef = E156A5CB15D1D57F00728A28 /* Reddit.m */; };
 		E15B386015CF9DC300B94795 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15B385F15CF9DC300B94795 /* Quartz.framework */; };
 		E16902E815D22A2200F2F30F /* RDOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16902E715D22A2200F2F30F /* RDOutlineView.m */; };
 		E176FECC15D0DBA700E44574 /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E176FECB15D0DBA700E44574 /* WebView.xib */; };
@@ -30,8 +28,11 @@
 		E17CF17515CF36FF008B62F9 /* Reddit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E17CF17315CF36FF008B62F9 /* Reddit.xcdatamodeld */; };
 		E181C2BA15D0654700170FAC /* RDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E181C2B915D0654700170FAC /* RDWindow.m */; };
 		E181C2BD15D066A800170FAC /* RDWindowFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = E181C2BC15D066A800170FAC /* RDWindowFrame.m */; };
+		E1A5BA8215D4EF6400307EB9 /* RDLoginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A5BA8015D4EF6400307EB9 /* RDLoginWindowController.m */; };
+		E1A5BA8315D4EF6400307EB9 /* RDLoginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A5BA8115D4EF6400307EB9 /* RDLoginWindowController.xib */; };
+		E1A5BA8D15D4F14600307EB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1512D5D15CF79E300E5C885 /* QuartzCore.framework */; };
 		E1C22AB015D20B3D00657BA0 /* RDWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C22AAE15D20B3D00657BA0 /* RDWindowController.m */; };
-		E1C22AB115D20B3D00657BA0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C22AAF15D20B3D00657BA0 /* MainWindow.xib */; };
+		E1C22AB115D20B3D00657BA0 /* RDWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C22AAF15D20B3D00657BA0 /* RDWindowController.xib */; };
 		E1C4FB9D15D3471300F4E056 /* RDOutlineViewChildFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4FB9C15D3471300F4E056 /* RDOutlineViewChildFieldCell.m */; };
 		E1C4FBA015D34F7900F4E056 /* RDOutlineViewHeaderFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4FB9F15D34F7900F4E056 /* RDOutlineViewHeaderFieldCell.m */; };
 		E1E7785915CC9914008F7736 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E7785815CC9914008F7736 /* Cocoa.framework */; };
@@ -74,8 +75,6 @@
 		E156A5BA15D1CB8D00728A28 /* close_button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_button_on.png; path = Resources/close_button_on.png; sourceTree = "<group>"; };
 		E156A5BB15D1CB8D00728A28 /* maximize_button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maximize_button_on.png; path = Resources/maximize_button_on.png; sourceTree = "<group>"; };
 		E156A5BC15D1CB8D00728A28 /* minimize_button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minimize_button_on.png; path = Resources/minimize_button_on.png; sourceTree = "<group>"; };
-		E156A5CA15D1D57F00728A28 /* Reddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reddit.h; sourceTree = "<group>"; };
-		E156A5CB15D1D57F00728A28 /* Reddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reddit.m; sourceTree = "<group>"; };
 		E15B385F15CF9DC300B94795 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		E16902E615D22A2200F2F30F /* RDOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDOutlineView.h; sourceTree = "<group>"; };
 		E16902E715D22A2200F2F30F /* RDOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDOutlineView.m; sourceTree = "<group>"; };
@@ -88,9 +87,12 @@
 		E181C2B915D0654700170FAC /* RDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDWindow.m; sourceTree = "<group>"; };
 		E181C2BB15D066A800170FAC /* RDWindowFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDWindowFrame.h; sourceTree = "<group>"; };
 		E181C2BC15D066A800170FAC /* RDWindowFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDWindowFrame.m; sourceTree = "<group>"; };
+		E1A5BA7F15D4EF6400307EB9 /* RDLoginWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLoginWindowController.h; sourceTree = "<group>"; };
+		E1A5BA8015D4EF6400307EB9 /* RDLoginWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLoginWindowController.m; sourceTree = "<group>"; };
+		E1A5BA8115D4EF6400307EB9 /* RDLoginWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDLoginWindowController.xib; sourceTree = "<group>"; };
 		E1C22AAD15D20B3D00657BA0 /* RDWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDWindowController.h; path = ../RDWindowController.h; sourceTree = "<group>"; };
 		E1C22AAE15D20B3D00657BA0 /* RDWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDWindowController.m; path = ../RDWindowController.m; sourceTree = "<group>"; };
-		E1C22AAF15D20B3D00657BA0 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
+		E1C22AAF15D20B3D00657BA0 /* RDWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RDWindowController.xib; path = ../RDWindowController.xib; sourceTree = "<group>"; };
 		E1C4FB9B15D3471300F4E056 /* RDOutlineViewChildFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDOutlineViewChildFieldCell.h; sourceTree = "<group>"; };
 		E1C4FB9C15D3471300F4E056 /* RDOutlineViewChildFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDOutlineViewChildFieldCell.m; sourceTree = "<group>"; };
 		E1C4FB9E15D34F7900F4E056 /* RDOutlineViewHeaderFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDOutlineViewHeaderFieldCell.h; sourceTree = "<group>"; };
@@ -115,9 +117,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A5BA8D15D4F14600307EB9 /* QuartzCore.framework in Frameworks */,
 				E176FECE15D0DC7D00E44574 /* WebKit.framework in Frameworks */,
 				E15B386015CF9DC300B94795 /* Quartz.framework in Frameworks */,
-				E1512D5E15CF79E300E5C885 /* QuartzCore.framework in Frameworks */,
 				E1E7785915CC9914008F7736 /* Cocoa.framework in Frameworks */,
 				E10A00F115CCA50F003F8ED7 /* RedditKit.framework in Frameworks */,
 			);
@@ -192,7 +194,6 @@
 		E1E7784915CC9914008F7736 = {
 			isa = PBXGroup;
 			children = (
-				E176FECD15D0DC7D00E44574 /* WebKit.framework */,
 				E1E7785E15CC9914008F7736 /* RedditKitTest */,
 				E1E7785715CC9914008F7736 /* Frameworks */,
 				E1E7785515CC9914008F7736 /* Products */,
@@ -211,6 +212,7 @@
 		E1E7785715CC9914008F7736 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E176FECD15D0DC7D00E44574 /* WebKit.framework */,
 				E10A00F015CCA50F003F8ED7 /* RedditKit.framework */,
 				E1E7785815CC9914008F7736 /* Cocoa.framework */,
 				E1E7785A15CC9914008F7736 /* Other Frameworks */,
@@ -235,17 +237,18 @@
 			children = (
 				E1E7786A15CC9914008F7736 /* AppDelegate.h */,
 				E1E7786B15CC9914008F7736 /* AppDelegate.m */,
-				E156A5CA15D1D57F00728A28 /* Reddit.h */,
-				E156A5CB15D1D57F00728A28 /* Reddit.m */,
 				E1C22AAD15D20B3D00657BA0 /* RDWindowController.h */,
 				E1C22AAE15D20B3D00657BA0 /* RDWindowController.m */,
+				E1A5BA7F15D4EF6400307EB9 /* RDLoginWindowController.h */,
+				E1A5BA8015D4EF6400307EB9 /* RDLoginWindowController.m */,
 				E16902E615D22A2200F2F30F /* RDOutlineView.h */,
 				E16902E715D22A2200F2F30F /* RDOutlineView.m */,
 				E1C4FB9E15D34F7900F4E056 /* RDOutlineViewHeaderFieldCell.h */,
 				E1C4FB9F15D34F7900F4E056 /* RDOutlineViewHeaderFieldCell.m */,
 				E1C4FB9C15D3471300F4E056 /* RDOutlineViewChildFieldCell.m */,
 				E1C4FB9B15D3471300F4E056 /* RDOutlineViewChildFieldCell.h */,
-				E1C22AAF15D20B3D00657BA0 /* MainWindow.xib */,
+				E1C22AAF15D20B3D00657BA0 /* RDWindowController.xib */,
+				E1A5BA8115D4EF6400307EB9 /* RDLoginWindowController.xib */,
 				E156A5B215D1C75B00728A28 /* RDWindow */,
 				E156A5A815D1C56A00728A28 /* RDContent */,
 				E156A5A915D1C57C00728A28 /* RDSidebar */,
@@ -362,7 +365,8 @@
 				E156A5BD15D1CB8D00728A28 /* close_button_on.png in Resources */,
 				E156A5BE15D1CB8D00728A28 /* maximize_button_on.png in Resources */,
 				E156A5BF15D1CB8D00728A28 /* minimize_button_on.png in Resources */,
-				E1C22AB115D20B3D00657BA0 /* MainWindow.xib in Resources */,
+				E1C22AB115D20B3D00657BA0 /* RDWindowController.xib in Resources */,
+				E1A5BA8315D4EF6400307EB9 /* RDLoginWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,11 +389,11 @@
 				E156A5AC15D1C58C00728A28 /* RDSidebarToolbar.m in Sources */,
 				E156A5AF15D1C5AE00728A28 /* RDSidebarContainer.m in Sources */,
 				E156A5B515D1C77700728A28 /* RDToolbar.m in Sources */,
-				E156A5CC15D1D57F00728A28 /* Reddit.m in Sources */,
 				E1C22AB015D20B3D00657BA0 /* RDWindowController.m in Sources */,
 				E16902E815D22A2200F2F30F /* RDOutlineView.m in Sources */,
 				E1C4FB9D15D3471300F4E056 /* RDOutlineViewChildFieldCell.m in Sources */,
 				E1C4FBA015D34F7900F4E056 /* RDOutlineViewHeaderFieldCell.m in Sources */,
+				E1A5BA8215D4EF6400307EB9 /* RDLoginWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

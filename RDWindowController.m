@@ -53,25 +53,25 @@
 {
     [super windowDidLoad];
     
-    RKSubreddit *subreddit = [[Reddit sharedClient] getSubreddit:@"funny"];
-    if (!subreddit) {
-        //            [self getRemoteSubreddit:@"funny" withSuccess:^(RDRKSubreddit *object) {
-        //                NSLog(@"subreddit: %@", object.title);
-        //
-        //                [[RDRKHTTPClient sharedClient] getLinksForSubreddit:object withSuccess:^(AFJSONRequestOperation *operation, id responseObject) {
-        //    //                NSArray *links = [object sortedLinksOfType:RDRKLinkTypeImage];
-        //    //                [self.pageController setArrangedObjects:links];
-        //    //                [self fetchNextImagesWithIndex:0];
-        //                } failure:^(AFJSONRequestOperation *operation, NSError *error) {
-        //                    NSLog(@"failure");
-        //                }];
-        //
-        //            }];
-    } else {
-        NSArray *links = [subreddit sortedLinksOfType:RKLinkTypeImage];
-        [pageController setArrangedObjects:links];
-        [self fetchNextImagesWithIndex:0];
-    }
+//    RKSubreddit *subreddit = [[Reddit sharedClient] getSubreddit:@"funny"];
+//    if (!subreddit) {
+//        //            [self getRemoteSubreddit:@"funny" withSuccess:^(RDRKSubreddit *object) {
+//        //                NSLog(@"subreddit: %@", object.title);
+//        //
+//        //                [[RDRKHTTPClient sharedClient] getLinksForSubreddit:object withSuccess:^(AFJSONRequestOperation *operation, id responseObject) {
+//        //    //                NSArray *links = [object sortedLinksOfType:RDRKLinkTypeImage];
+//        //    //                [self.pageController setArrangedObjects:links];
+//        //    //                [self fetchNextImagesWithIndex:0];
+//        //                } failure:^(AFJSONRequestOperation *operation, NSError *error) {
+//        //                    NSLog(@"failure");
+//        //                }];
+//        //
+//        //            }];
+//    } else {
+//        NSArray *links = [subreddit sortedLinksOfType:RKLinkTypeImage];
+//        [pageController setArrangedObjects:links];
+//        [self fetchNextImagesWithIndex:0];
+//    }
 }
 
 #pragma mark - RDWindowDelegate methods

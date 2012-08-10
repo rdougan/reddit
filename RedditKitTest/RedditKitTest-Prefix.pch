@@ -5,5 +5,4 @@
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
     #import <RedditKit/RedditKit.h>
-    #import "Reddit.h"
 #endif

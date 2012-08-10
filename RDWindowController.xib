@@ -700,7 +700,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">241</int>
+			<int key="maxID">254</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -830,6 +830,7 @@
 					<string key="superclassName">NSWindowController</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="contentToolbar">RDContentToolbar</string>
+						<string key="loginWindow">NSWindow</string>
 						<string key="outlineView">NSOutlineView</string>
 						<string key="pageController">NSPageController</string>
 					</dictionary>
@@ -837,6 +838,10 @@
 						<object class="IBToOneOutletInfo" key="contentToolbar">
 							<string key="name">contentToolbar</string>
 							<string key="candidateClassName">RDContentToolbar</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="loginWindow">
+							<string key="name">loginWindow</string>
+							<string key="candidateClassName">NSWindow</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="outlineView">
 							<string key="name">outlineView</string>
