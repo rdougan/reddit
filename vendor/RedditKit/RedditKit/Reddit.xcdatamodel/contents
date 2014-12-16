@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="12A269" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Link" representedClassName="RKLink" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="downs" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="permalink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remoteID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="ups" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subreddit" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Subreddit" inverseName="links" inverseEntity="Subreddit" syncable="YES"/>
+    </entity>
+    <entity name="Subreddit" representedClassName="RKSubreddit" syncable="YES">
+        <attribute name="capitalizedURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nsfw" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="remoteID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subscribers" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="links" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Link" inverseName="subreddit" inverseEntity="Link" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="RKUser" syncable="YES">
+        <attribute name="commentKarma" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="hasMail" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasModMail" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isGold" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isMod" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="linkKarma" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="modhash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remoteID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subscriptions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Subreddit" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Link" positionX="0" positionY="0" width="128" height="210"/>
+        <element name="Subreddit" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="User" positionX="160" positionY="192" width="128" height="210"/>
+    </elements>
+</model>

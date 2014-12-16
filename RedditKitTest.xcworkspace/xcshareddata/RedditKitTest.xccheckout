@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2925BB12-2CFD-4796-AB49-EC6DD15D485B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RedditKitTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>31E6F66B82D09BB0A88A4D2750B2A9797621BBD0</key>
+		<string>https://github.com/rdougan/RedditKit.git</string>
+		<key>73DBB18825BDEEE8F0B708201CE99CDD86FDF9C4</key>
+		<string>https://github.com/rdougan/reddit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RedditKitTest.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>31E6F66B82D09BB0A88A4D2750B2A9797621BBD0</key>
+		<string>..vendor/RedditKit/</string>
+		<key>73DBB18825BDEEE8F0B708201CE99CDD86FDF9C4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rdougan/reddit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>73DBB18825BDEEE8F0B708201CE99CDD86FDF9C4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>73DBB18825BDEEE8F0B708201CE99CDD86FDF9C4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>reddit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>31E6F66B82D09BB0A88A4D2750B2A9797621BBD0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RedditKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>

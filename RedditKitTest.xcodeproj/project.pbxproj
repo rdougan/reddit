@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E1096C5915CF835800D2E5D0 /* ImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1096C5815CF835800D2E5D0 /* ImageView.xib */; };
-		E10A00F115CCA50F003F8ED7 /* RedditKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10A00F015CCA50F003F8ED7 /* RedditKit.framework */; };
 		E136C1CD15CFAAF5008F9954 /* RDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E136C1CC15CFAAF5008F9954 /* RDImageView.m */; };
 		E156A59F15D1BAF200728A28 /* RDContentContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E156A59E15D1BAF200728A28 /* RDContentContainer.m */; };
 		E156A5A215D1BC1900728A28 /* RDContentToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E156A5A115D1BC1900728A28 /* RDContentToolbar.m */; };
@@ -20,6 +19,15 @@
 		E156A5BD15D1CB8D00728A28 /* close_button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = E156A5BA15D1CB8D00728A28 /* close_button_on.png */; };
 		E156A5BE15D1CB8D00728A28 /* maximize_button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = E156A5BB15D1CB8D00728A28 /* maximize_button_on.png */; };
 		E156A5BF15D1CB8D00728A28 /* minimize_button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = E156A5BC15D1CB8D00728A28 /* minimize_button_on.png */; };
+		E15B03631A40F18700690516 /* NSDictionary+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B03511A40F18700690516 /* NSDictionary+QueryString.m */; };
+		E15B03641A40F18700690516 /* NSString+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B03531A40F18700690516 /* NSString+QueryString.m */; };
+		E15B03651A40F18700690516 /* Reddit.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = E15B03541A40F18700690516 /* Reddit.xcdatamodel */; };
+		E15B03661A40F18700690516 /* RKDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B03581A40F18700690516 /* RKDefines.m */; };
+		E15B03671A40F18700690516 /* RKHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B035A1A40F18700690516 /* RKHTTPClient.m */; };
+		E15B03681A40F18700690516 /* RKLink.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B035C1A40F18700690516 /* RKLink.m */; };
+		E15B03691A40F18700690516 /* RKRemoteManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B035E1A40F18700690516 /* RKRemoteManagedObject.m */; };
+		E15B036A1A40F18700690516 /* RKSubreddit.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B03601A40F18700690516 /* RKSubreddit.m */; };
+		E15B036B1A40F18700690516 /* RKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B03621A40F18700690516 /* RKUser.m */; };
 		E15B386015CF9DC300B94795 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15B385F15CF9DC300B94795 /* Quartz.framework */; };
 		E16902E815D22A2200F2F30F /* RDOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16902E715D22A2200F2F30F /* RDOutlineView.m */; };
 		E176FECC15D0DBA700E44574 /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E176FECB15D0DBA700E44574 /* WebView.xib */; };
@@ -41,22 +49,14 @@
 		E1E7786915CC9914008F7736 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E1E7786715CC9914008F7736 /* Credits.rtf */; };
 		E1E7786C15CC9914008F7736 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E7786B15CC9914008F7736 /* AppDelegate.m */; };
 		E1E7786F15CC9914008F7736 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E7786D15CC9914008F7736 /* MainMenu.xib */; };
+		E9E63F8219C02BAF59FF89A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1A648DD65F1DD026E4B131 /* libPods.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E10A00EE15CCA4CE003F8ED7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E10A00EA15CCA4CE003F8ED7 /* RedditKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E1E7782D15CC97B3008F7736;
-			remoteInfo = RedditKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		2A1A648DD65F1DD026E4B131 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D430C4A35DDA2D378F847F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		841524A7239CEBF55C930EF8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E1096C5815CF835800D2E5D0 /* ImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageView.xib; sourceTree = "<group>"; };
-		E10A00EA15CCA4CE003F8ED7 /* RedditKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedditKit.xcodeproj; path = Vendor/RedditKit/RedditKit.xcodeproj; sourceTree = SOURCE_ROOT; };
-		E10A00F015CCA50F003F8ED7 /* RedditKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RedditKit.framework; path = "../../Library/Developer/Xcode/DerivedData/RedditKit-erwgzhgsfzfkxqfsamcrugexeeyb/Build/Products/Debug/RedditKit.framework"; sourceTree = "<group>"; };
 		E136C1CB15CFAAF5008F9954 /* RDImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDImageView.h; sourceTree = "<group>"; };
 		E136C1CC15CFAAF5008F9954 /* RDImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDImageView.m; sourceTree = "<group>"; };
 		E1512D5D15CF79E300E5C885 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -75,6 +75,25 @@
 		E156A5BA15D1CB8D00728A28 /* close_button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_button_on.png; path = Resources/close_button_on.png; sourceTree = "<group>"; };
 		E156A5BB15D1CB8D00728A28 /* maximize_button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maximize_button_on.png; path = Resources/maximize_button_on.png; sourceTree = "<group>"; };
 		E156A5BC15D1CB8D00728A28 /* minimize_button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minimize_button_on.png; path = Resources/minimize_button_on.png; sourceTree = "<group>"; };
+		E15B03501A40F18700690516 /* NSDictionary+QueryString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+QueryString.h"; path = "vendor/RedditKit/RedditKit/NSDictionary+QueryString.h"; sourceTree = SOURCE_ROOT; };
+		E15B03511A40F18700690516 /* NSDictionary+QueryString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+QueryString.m"; path = "vendor/RedditKit/RedditKit/NSDictionary+QueryString.m"; sourceTree = SOURCE_ROOT; };
+		E15B03521A40F18700690516 /* NSString+QueryString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+QueryString.h"; path = "vendor/RedditKit/RedditKit/NSString+QueryString.h"; sourceTree = SOURCE_ROOT; };
+		E15B03531A40F18700690516 /* NSString+QueryString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+QueryString.m"; path = "vendor/RedditKit/RedditKit/NSString+QueryString.m"; sourceTree = SOURCE_ROOT; };
+		E15B03541A40F18700690516 /* Reddit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = Reddit.xcdatamodel; path = vendor/RedditKit/RedditKit/Reddit.xcdatamodel; sourceTree = SOURCE_ROOT; };
+		E15B03551A40F18700690516 /* RedditKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RedditKit-Prefix.pch"; path = "vendor/RedditKit/RedditKit/RedditKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E15B03561A40F18700690516 /* RedditKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RedditKit.h; path = vendor/RedditKit/RedditKit/RedditKit.h; sourceTree = SOURCE_ROOT; };
+		E15B03571A40F18700690516 /* RKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKDefines.h; path = vendor/RedditKit/RedditKit/RKDefines.h; sourceTree = SOURCE_ROOT; };
+		E15B03581A40F18700690516 /* RKDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKDefines.m; path = vendor/RedditKit/RedditKit/RKDefines.m; sourceTree = SOURCE_ROOT; };
+		E15B03591A40F18700690516 /* RKHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKHTTPClient.h; path = vendor/RedditKit/RedditKit/RKHTTPClient.h; sourceTree = SOURCE_ROOT; };
+		E15B035A1A40F18700690516 /* RKHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKHTTPClient.m; path = vendor/RedditKit/RedditKit/RKHTTPClient.m; sourceTree = SOURCE_ROOT; };
+		E15B035B1A40F18700690516 /* RKLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKLink.h; path = vendor/RedditKit/RedditKit/RKLink.h; sourceTree = SOURCE_ROOT; };
+		E15B035C1A40F18700690516 /* RKLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKLink.m; path = vendor/RedditKit/RedditKit/RKLink.m; sourceTree = SOURCE_ROOT; };
+		E15B035D1A40F18700690516 /* RKRemoteManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRemoteManagedObject.h; path = vendor/RedditKit/RedditKit/RKRemoteManagedObject.h; sourceTree = SOURCE_ROOT; };
+		E15B035E1A40F18700690516 /* RKRemoteManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRemoteManagedObject.m; path = vendor/RedditKit/RedditKit/RKRemoteManagedObject.m; sourceTree = SOURCE_ROOT; };
+		E15B035F1A40F18700690516 /* RKSubreddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKSubreddit.h; path = vendor/RedditKit/RedditKit/RKSubreddit.h; sourceTree = SOURCE_ROOT; };
+		E15B03601A40F18700690516 /* RKSubreddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKSubreddit.m; path = vendor/RedditKit/RedditKit/RKSubreddit.m; sourceTree = SOURCE_ROOT; };
+		E15B03611A40F18700690516 /* RKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKUser.h; path = vendor/RedditKit/RedditKit/RKUser.h; sourceTree = SOURCE_ROOT; };
+		E15B03621A40F18700690516 /* RKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKUser.m; path = vendor/RedditKit/RedditKit/RKUser.m; sourceTree = SOURCE_ROOT; };
 		E15B385F15CF9DC300B94795 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		E16902E615D22A2200F2F30F /* RDOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDOutlineView.h; sourceTree = "<group>"; };
 		E16902E715D22A2200F2F30F /* RDOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDOutlineView.m; sourceTree = "<group>"; };
@@ -121,25 +140,44 @@
 				E176FECE15D0DC7D00E44574 /* WebKit.framework in Frameworks */,
 				E15B386015CF9DC300B94795 /* Quartz.framework in Frameworks */,
 				E1E7785915CC9914008F7736 /* Cocoa.framework in Frameworks */,
-				E10A00F115CCA50F003F8ED7 /* RedditKit.framework in Frameworks */,
+				E9E63F8219C02BAF59FF89A2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E10A00EB15CCA4CE003F8ED7 /* Products */ = {
+		6BF6B444B5C13F25C87314D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E10A00EF15CCA4CE003F8ED7 /* RedditKit.framework */,
+				841524A7239CEBF55C930EF8 /* Pods.debug.xcconfig */,
+				58D430C4A35DDA2D378F847F /* Pods.release.xcconfig */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E10AFF6B15CC9C1A003F8ED7 /* RedditKit */ = {
 			isa = PBXGroup;
 			children = (
-				E10A00EA15CCA4CE003F8ED7 /* RedditKit.xcodeproj */,
+				E15B03501A40F18700690516 /* NSDictionary+QueryString.h */,
+				E15B03511A40F18700690516 /* NSDictionary+QueryString.m */,
+				E15B03521A40F18700690516 /* NSString+QueryString.h */,
+				E15B03531A40F18700690516 /* NSString+QueryString.m */,
+				E15B03541A40F18700690516 /* Reddit.xcdatamodel */,
+				E15B03551A40F18700690516 /* RedditKit-Prefix.pch */,
+				E15B03561A40F18700690516 /* RedditKit.h */,
+				E15B03571A40F18700690516 /* RKDefines.h */,
+				E15B03581A40F18700690516 /* RKDefines.m */,
+				E15B03591A40F18700690516 /* RKHTTPClient.h */,
+				E15B035A1A40F18700690516 /* RKHTTPClient.m */,
+				E15B035B1A40F18700690516 /* RKLink.h */,
+				E15B035C1A40F18700690516 /* RKLink.m */,
+				E15B035D1A40F18700690516 /* RKRemoteManagedObject.h */,
+				E15B035E1A40F18700690516 /* RKRemoteManagedObject.m */,
+				E15B035F1A40F18700690516 /* RKSubreddit.h */,
+				E15B03601A40F18700690516 /* RKSubreddit.m */,
+				E15B03611A40F18700690516 /* RKUser.h */,
+				E15B03621A40F18700690516 /* RKUser.m */,
 			);
 			name = RedditKit;
 			sourceTree = "<group>";
@@ -198,6 +236,7 @@
 				E1E7785715CC9914008F7736 /* Frameworks */,
 				E1E7785515CC9914008F7736 /* Products */,
 				E1E7788515CC993B008F7736 /* Vendor */,
+				6BF6B444B5C13F25C87314D4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,9 +252,9 @@
 			isa = PBXGroup;
 			children = (
 				E176FECD15D0DC7D00E44574 /* WebKit.framework */,
-				E10A00F015CCA50F003F8ED7 /* RedditKit.framework */,
 				E1E7785815CC9914008F7736 /* Cocoa.framework */,
 				E1E7785A15CC9914008F7736 /* Other Frameworks */,
+				2A1A648DD65F1DD026E4B131 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -294,9 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1E7787515CC9914008F7736 /* Build configuration list for PBXNativeTarget "RedditKitTest" */;
 			buildPhases = (
+				B7CF68FC9E36B1B9AC4799C2 /* Check Pods Manifest.lock */,
 				E1E7785015CC9914008F7736 /* Sources */,
 				E1E7785115CC9914008F7736 /* Frameworks */,
 				E1E7785215CC9914008F7736 /* Resources */,
+				E820462FD222759660D43C64 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,7 +355,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RD;
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Robert Dougan";
 			};
 			buildConfigurationList = E1E7784E15CC9914008F7736 /* Build configuration list for PBXProject "RedditKitTest" */;
@@ -327,28 +368,12 @@
 			mainGroup = E1E7784915CC9914008F7736;
 			productRefGroup = E1E7785515CC9914008F7736 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E10A00EB15CCA4CE003F8ED7 /* Products */;
-					ProjectRef = E10A00EA15CCA4CE003F8ED7 /* RedditKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E1E7785315CC9914008F7736 /* RedditKitTest */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E10A00EF15CCA4CE003F8ED7 /* RedditKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RedditKit.framework;
-			remoteRef = E10A00EE15CCA4CE003F8ED7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E1E7785215CC9914008F7736 /* Resources */ = {
@@ -372,6 +397,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B7CF68FC9E36B1B9AC4799C2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E820462FD222759660D43C64 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1E7785015CC9914008F7736 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -384,14 +442,23 @@
 				E181C2BA15D0654700170FAC /* RDWindow.m in Sources */,
 				E181C2BD15D066A800170FAC /* RDWindowFrame.m in Sources */,
 				E176FED115D0DCC700E44574 /* RDWebViewController.m in Sources */,
+				E15B03641A40F18700690516 /* NSString+QueryString.m in Sources */,
 				E156A59F15D1BAF200728A28 /* RDContentContainer.m in Sources */,
 				E156A5A215D1BC1900728A28 /* RDContentToolbar.m in Sources */,
+				E15B036A1A40F18700690516 /* RKSubreddit.m in Sources */,
+				E15B03651A40F18700690516 /* Reddit.xcdatamodel in Sources */,
 				E156A5AC15D1C58C00728A28 /* RDSidebarToolbar.m in Sources */,
 				E156A5AF15D1C5AE00728A28 /* RDSidebarContainer.m in Sources */,
 				E156A5B515D1C77700728A28 /* RDToolbar.m in Sources */,
 				E1C22AB015D20B3D00657BA0 /* RDWindowController.m in Sources */,
+				E15B03691A40F18700690516 /* RKRemoteManagedObject.m in Sources */,
+				E15B03671A40F18700690516 /* RKHTTPClient.m in Sources */,
 				E16902E815D22A2200F2F30F /* RDOutlineView.m in Sources */,
+				E15B03631A40F18700690516 /* NSDictionary+QueryString.m in Sources */,
+				E15B03681A40F18700690516 /* RKLink.m in Sources */,
 				E1C4FB9D15D3471300F4E056 /* RDOutlineViewChildFieldCell.m in Sources */,
+				E15B03661A40F18700690516 /* RKDefines.m in Sources */,
+				E15B036B1A40F18700690516 /* RKUser.m in Sources */,
 				E1C4FBA015D34F7900F4E056 /* RDOutlineViewHeaderFieldCell.m in Sources */,
 				E1A5BA8215D4EF6400307EB9 /* RDLoginWindowController.m in Sources */,
 			);
@@ -431,7 +498,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -459,7 +525,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -478,6 +543,7 @@
 		};
 		E1E7787615CC9914008F7736 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 841524A7239CEBF55C930EF8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -486,7 +552,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RedditKitTest/RedditKitTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/RedditKit/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/RedditKit/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "RedditKitTest/RedditKitTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -495,6 +564,7 @@
 		};
 		E1E7787715CC9914008F7736 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D430C4A35DDA2D378F847F /* Pods.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -503,7 +573,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RedditKitTest/RedditKitTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/RedditKit/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/RedditKit/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "RedditKitTest/RedditKitTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
